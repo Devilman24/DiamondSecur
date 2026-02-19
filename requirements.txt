@@ -1,0 +1,4 @@
+# DiamondSecur - Scanner Sécurité Linux
+# Auteur : Devilman24
+# Version minimale de Python
+python>=3.10
