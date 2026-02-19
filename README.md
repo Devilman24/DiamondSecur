@@ -1,4 +1,4 @@
-# 💎 DiamondSecur v1.0
+# 💎 DiamondSecur v1.0🎭!
 **Advanced Linux Security Auditor & Threat Hunter**  
 
 [![GitHub stars](https://img.shields.io/github/stars/Devilman24/DiamondSecur?style=social)](https://github.com/Devilman24/DiamondSecur/stargazers)
