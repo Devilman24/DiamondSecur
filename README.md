@@ -21,13 +21,12 @@ Designed for **hackers, sysadmins, and security enthusiasts** who want a quick a
 
 ## 🚀 Key Features
 
-- **🔍 Deep File Scan** – Heuristic malware pattern detection (`shred`, reverse shells, `base64` obfuscation).  
-- **🛡️ Rootkit Hunter** – Detect hidden “ghost” processes by monitoring `/proc`.  
-- **📡 Network Audit** – Monitors outgoing connections to suspicious ports or public IPs.  
-- **⚙️ Persistence Check** – Audits crontabs and SUID files automatically.  
-- **⚡ Fast & Stealth** – Optimized for **speed and minimal dependencies**.
-
----
+- **🔍 Directory Scan** – Scans for malicious scripts or files within a specific folder.  
+- **⚡ Process Scan** – Analyzes running commands (searching for `-i`, `/dev/tcp`).  
+- **🛡️ Rootkit Hunt** – Compares system APIs with visible processes to detect hidden ghosts.  
+- **📡 Network Audit** – Lists suspicious ESTABLISHED sockets and non-standard port connections.  
+- **🗝️ Check SUID Files** – Inspects SUID files for potential privilege escalation.  
+- **📅 Check Crontab** – Lists scheduled tasks for current and system users.  
 
 ## 🛠️ Installation & Usage
 
@@ -57,13 +56,15 @@ sudo python3 DiamondSecur.py
 
 Once launched, DiamondSecur provides a simple and intuitive interface:
 
-| Option | Fonction | Description |
+| Option | Function | Description |
 | :--- | :--- | :--- |
 | **1** | `Directory Scan` | Scans for malicious scripts or files within a specific folder. |
-| **2** | `Process Scan` | Analyzes running commands (searching for -i, /dev/tcp). |
+| **2** | `Process Scan` | Analyzes running commands (searching for `-i`, `/dev/tcp`). |
 | **3** | `Rootkit Hunt` | Compares system APIs with visible processes to detect hidden ghosts. |
 | **4** | `Network Audit` | Lists suspicious ESTABLISHED sockets and non-standard port connections. |
-| **5** | `SUID/Cron` | Inspects SUID files and scheduled tasks via crontab. |
+| **5** | `Check SUID Files` | Inspects SUID files for potential privilege escalation. |
+| **6** | `Check Crontab` | Lists scheduled tasks for current and system users. |
+| **7** | `Exit` | Closes the tool safely. |
 
 ## 📁 Project Structure
 
